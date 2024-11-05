@@ -1,95 +1,122 @@
 <!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.1 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
 <html lang="en" class="no-js">
+  <!-- Head section unchanged -->
   <head>
     <meta charset="utf-8">
-    <!-- ... other head content ... -->
-    <style>
-      /* Preserve minimal-mistakes theme font and layout while fixing colors */
-      .archive__item {
-        display: flex;
-        align-items: flex-start;
-        gap: 2em;
-      }
+
+<!-- Site verification -->    
+<meta name="google-site-verification" content="VbJJZ4w_1-bewQe81-rGYC5-wBQWI8Yu6b3XCHzYlss" />
+    
+<!-- begin SEO: Global site tag (gtag.js) - Google Analytics 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179776860-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-179776860-1');
+  </script>  -->
       
-      .archive__item-teaser {
-        flex: 0 0 auto;
-        width: 600px;
-      }
-      
-      .archive__item-body {
-        flex: 1;
-      }
-      
-      .archive__item-excerpt h2,
-      .archive__item-excerpt p,
-      .quote-text {
-        color: #000000 !important;
-        font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !important;
-      }
-      
-      .quote-text {
-        margin-top: 1em;
-        font-style: italic;
-      }
-      
-      .archive__item-excerpt ul {
-        list-style-type: disc;
-        padding-left: 1.5em;
-        margin-bottom: 1em;
-      }
-      
-      .archive__item-excerpt li {
-        margin-bottom: 0.5em;
-      }
-    </style>
+  <title>Anindo Sarkar</title>
+  <meta name="description" content="Academic and personal site for Anindo Sarkar">
+  <meta name="keywords" content="Anindo Sarkar, IIT Kharagpur, IIM Ahmedabad, UC San Diego, PhD, Macroecconomics, Finance">
+  <meta name="author" content="Anindo Sarkar">
+  
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Anindo Sarkar">
+  <meta property="og:title" content="Anindo Sarkar">
+  <link rel="canonical" href="https://anindosarkar1.github.io/">  
+  <meta property="og:url" content="https://anindosarkar1.github.io/">
+<!-- end SEO -->
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://anindosarkar1.github.io/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
   </head>
   <body class="layout--splash">
-    <div class="masthead">
-      <div class="masthead__inner-wrap">
-        <div class="masthead__menu">
-          <nav id="site-nav" class="greedy-nav">
-            <a class="site-title" href="https://anindosarkar1.github.io/">Anindo Sarkar</a>
-            <ul class="visible-links">  
-              <li class="masthead__menu-item"><a href="https://anindosarkar1.github.io/">About</a></li>            
-              <li class="masthead__menu-item"><a href="https://anindosarkar1.github.io/CV.pdf">Resume</a></li>
-              <li class="masthead__menu-item"><a href="https://anindosarkar1.github.io/research/">Research</a></li> 
-            </ul>
-            <button><div class="navicon"></div></button>
-            <ul class="hidden-links hidden"></ul>
-          </nav>
-        </div>
-      </div>
-    </div>
     
-    <div id="main" role="main">
-      <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
-        <section class="page__content" itemprop="text">
-          <div class="feature__wrapper">
-            <div class="feature__item--left">
-              <div class="archive__item">
-                <div class="archive__item-teaser">
-                  <img src="https://anindosarkar1.github.io/img/Website_dp.jpg" alt="placeholder image 1" style="width:600px;height:600px;" />
-                </div>
-                <div class="archive__item-body">  
-                  <div class="archive__item-excerpt">
-                    <h2 id="bio">Bio</h2>
-                    <p>I am a PhD candidate at <a href="https://rady.ucsd.edu/">Rady School of Management, UC San Diego</a>. My background is as follows:</p>
-                    <ul>
-                      <li>I was a research assistant at <a href="https://www.isb.edu/en.html">Indian School of Business</a>.</li>
-                      <li>I obtained an MBA degree from <a href="https://www.iima.ac.in/">Indian Institute of Management, Ahmedabad (2016)</a>.</li>
-                      <li>I obtained a Bachelors degree in mechanical engineering (B.Tech. (Hons)) from <a href="https://www.iitkgp.ac.in/">Indian Institute of Technology, Kharagpur (2013)</a>.</li>
-                    </ul>
-                    <h2 id="contact">Contact</h2>
-                    <p><strong>Email</strong>: ansarkar "at" ucsd.edu</p>
-                  </div>
-                </div>
+<!--[if lt IE 9]>
+  <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+  
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://anindosarkar1.github.io/">Anindo Sarkar</a>
+        <ul class="visible-links">  
+          <li class="masthead__menu-item"><a href="https://anindosarkar1.github.io/">About</a></li>            
+          <li class="masthead__menu-item"><a href="https://anindosarkar1.github.io/CV.pdf">Resume</a></li>
+          <li class="masthead__menu-item"><a href="https://anindosarkar1.github.io/research/">Research</a></li> 
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
+    <section class="page__content" itemprop="text">
+      <div class="feature__wrapper">
+        <div class="feature__item--left">
+          <div class="archive__item">
+            <div class="archive__item-teaser">
+              <img src="https://anindosarkar1.github.io/img/Website_dp.jpg" alt="placeholder image 1" style="width:600px;height:600px;" />
+            </div>
+            <div class="archive__item-body">  
+              <div class="archive__item-excerpt">
+                <h2 id="bio">Bio</h2>
+                <p>I am a PhD candidate at <a href="https://rady.ucsd.edu/">Rady School of Management, UC San Diego</a>. My background is as follows:</p>
+                <ul style="list-style-type: disc; margin-left: 20px;">
+                  <li>I was a research assistant at <a href="https://www.isb.edu/en.html">Indian School of Business</a></li>
+                  <li>I have an MBA degree from <a href="https://www.iima.ac.in/">Indian Institute of Management, Ahmedabad (2016)</a></li>
+                  <li>Bachelors degree in mechanical engineering (B.Tech. (Hons)) from <a href="https://www.iitkgp.ac.in/">Indian Institute of Technology, Kharagpur (2013)</a></li>
+                </ul>
+                <h2 id="contact">Contact</h2>
+                <p><strong>Email</strong>: ansarkar "at" ucsd.edu</p>
               </div>
             </div>
-            <div class="quote-text">Favorite quote: "Observation always involves theory" - Edwin Hubble</div>
           </div>
-        </section>
-      </article>
-    </div>
+        </div>
+        
+        <font size="3">Favorite quote: "Observation always involves theory"- Edwin Hubble</font>
+      </div>
+    </section>
+  </article>
+</div>
 
     <div class="page__footer">
       <footer>
