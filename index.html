@@ -1,22 +1,64 @@
 <!doctype html>
 <html lang="en" class="no-js">
-  <!-- Head section remains unchanged -->
   <head>
     <meta charset="utf-8">
     <!-- ... other head content ... -->
     <style>
-      /* Add custom styles to override link colors */
+      /* Preserve minimal-mistakes theme font and layout while fixing colors */
+      .archive__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 2em;
+      }
+      
+      .archive__item-teaser {
+        flex: 0 0 auto;
+        width: 600px;
+      }
+      
+      .archive__item-body {
+        flex: 1;
+      }
+      
       .archive__item-excerpt h2,
       .archive__item-excerpt p,
       .quote-text {
-        color: #000000 !important; /* Force black text */
+        color: #000000 !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !important;
+      }
+      
+      .quote-text {
+        margin-top: 1em;
+        font-style: italic;
+      }
+      
+      .archive__item-excerpt ul {
+        list-style-type: disc;
+        padding-left: 1.5em;
+        margin-bottom: 1em;
+      }
+      
+      .archive__item-excerpt li {
+        margin-bottom: 0.5em;
       }
     </style>
   </head>
   <body class="layout--splash">
-    <!-- Navigation section remains unchanged -->
     <div class="masthead">
-      <!-- ... navigation content ... -->
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <a class="site-title" href="https://anindosarkar1.github.io/">Anindo Sarkar</a>
+            <ul class="visible-links">  
+              <li class="masthead__menu-item"><a href="https://anindosarkar1.github.io/">About</a></li>            
+              <li class="masthead__menu-item"><a href="https://anindosarkar1.github.io/CV.pdf">Resume</a></li>
+              <li class="masthead__menu-item"><a href="https://anindosarkar1.github.io/research/">Research</a></li> 
+            </ul>
+            <button><div class="navicon"></div></button>
+            <ul class="hidden-links hidden"></ul>
+          </nav>
+        </div>
+      </div>
     </div>
     
     <div id="main" role="main">
@@ -31,11 +73,11 @@
                 <div class="archive__item-body">  
                   <div class="archive__item-excerpt">
                     <h2 id="bio">Bio</h2>
-                    <p> I am a PhD candidate at <a href="https://rady.ucsd.edu/">Rady School of Management, UC San Diego</a>. My background is as follows:</p>
+                    <p>I am a PhD candidate at <a href="https://rady.ucsd.edu/">Rady School of Management, UC San Diego</a>. My background is as follows:</p>
                     <ul>
-                      <li><small>I was a research assistant at <a href="https://www.isb.edu/en.html">Indian School of Business</a>.</small></li>
-                      <li><small>I have an MBA degree from <a href="https://www.iima.ac.in/">Indian Institute of Management, Ahmedabad (2016)</a>.</small></li>
-                      <li><small>Bachelors degree in mechanical engineering (B.Tech. (Hons)) from <a href="https://www.iitkgp.ac.in/">Indian Institute of Technology, Kharagpur (2013)</a>.</small></li>
+                      <li>I was a research assistant at <a href="https://www.isb.edu/en.html">Indian School of Business</a>.</li>
+                      <li>I obtained an MBA degree from <a href="https://www.iima.ac.in/">Indian Institute of Management, Ahmedabad (2016)</a>.</li>
+                      <li>I obtained a Bachelors degree in mechanical engineering (B.Tech. (Hons)) from <a href="https://www.iitkgp.ac.in/">Indian Institute of Technology, Kharagpur (2013)</a>.</li>
                     </ul>
                     <h2 id="contact">Contact</h2>
                     <p><strong>Email</strong>: ansarkar "at" ucsd.edu</p>
@@ -43,16 +85,21 @@
                 </div>
               </div>
             </div>
-            
-            <p class="quote-text" style="font-size: 3;">Favorite quote: "Observation always involves theory" - Edwin Hubble</p>
+            <div class="quote-text">Favorite quote: "Observation always involves theory" - Edwin Hubble</div>
           </div>
         </section>
       </article>
     </div>
 
-    <!-- Footer section remains unchanged -->
     <div class="page__footer">
-      <!-- ... footer content ... -->
+      <footer>
+        <div class="page__footer-follow">
+          <ul class="social-icons">
+            <li><strong>Follow:</strong></li>
+            <li><a href="https://anindosarkar1.github.io/"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
 
     <script src="https://anindosarkar1.github.io/assets/js/main.min.js"></script>
